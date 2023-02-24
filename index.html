@@ -1,6 +1,660 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My First Web Page</title>
-    </head>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <title>Bjössi</title>
+  
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href=".xyz/main.css">
+
+  
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+
+<script src=".xyz/elasticlunr.min.js" defer></script>
+
+<script src=".xyz/search_index.en.js" defer></script>
+
+
+
+
+  
+  
+<!-- RSS -->
+
+<link rel="alternate" type="application/atom+xml" title="RSS" href=".xyz/atom.xml">
+
+
+  
+
+  
+  
+</head>
+
+<body>
+  <aside id="sidebar" class="menu is-hidden-touch">
+    
+
+<div style="display:block;margin:auto auto 0;padding:.5rem">
+    <figure class="image">
+        <img id="avatar" class="is-rounded" src=".xyz/media/mois.jpg">
+    </figure>
+</div>
+
+
+    
+<ul id="menu" class="menu-list">
+    
+
+<li data-menuanchor="about"><a href=".xyz/#anchor_about">ABOUT</a></li>   
+
+ 
+<li data-menuanchor="skills"><a href=".xyz/#anchor_skills">SKILLS</a></li>
+
+
+<li data-menuanchor="projects"><a href=".xyz/#anchor_projects">PROJECTS</a></li>
+
+
+
+ 
+<li data-menuanchor="experience"><a href=".xyz/#anchor_experience">EXPERIENCE</a></li>
+
+ 
+<li data-menuanchor="education"><a href=".xyz/#anchor_education">EDUCATION</a></li>
+
+
+</ul>
+
+  </aside>
+  
+<div class="modal" id="copyTarget">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <section class="modal-card-body">
+      <textarea class="textarea" id="bibtex-content" placeholder="e.g. Hello world"  readonly></textarea>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" id="copyButton">Copy to clipboard</button>
+    </footer>
+  </div>
+</div>
+
+  <div id="content">
+    <!-- Content -->
+    
+<div id="fullpage">
+  
+  <div class="section hero is-fullheight page" id="about">
+    
+
+<div class="is-flex is-flex-direction-column" style="height: 100%;">
+  <div class="flex: 1;">
+    <h1>Björn Elvar <span class="text-primary">Þorleifsson</span></h1>
+    <h2 class="subtitle">
+      Reykjavík / Chicago ·  <a href="mailto:bjornelvar@icloud.com">bjornelvar@icloud.com</a>
+    </h2>
+  </div>
+  <div class="is-flex is-flex-direction-column is-justify-content-center" style="flex: 1; overflow: auto;">
+    <div class="content" style="overflow: auto; padding-top: 1.5rem;">
+      <h3 id="snowskin-tone-3-computer-hi-i-m-bjorn-elvar-i-am-currently-studying-computer-science-at-the-reykjavik-university">👨🏼‍💻 Hi! I'm Björn Elvar. I am currently studying Computer Science at the Reykjavik University.</h3>
+<!-- - 🎧 I am currently obsessed with this [album](https://open.spotify.com/album/6GjwtEZcfenmOf6l18N7T7?si=xQP9Q3bSSoiY4PuMit3hVg). -->
+<ul>
+<li>🦅 My favorite NBA team is the <a href="https://www.nba.com/hawks/">Atlanta Hawks</a>.</li>
+<li>📬 You can email me <a href="mailto:bjornelvar@icloud.com">here</a>.</li>
+<li>😺 Take a look at my <a href="https://open.kattis.com/users/bjornelvar">Kattis profile</a>.</li>
+<li>🎧 I am currenty listening to:</li>
+</ul>
+<p><a href="https://open.spotify.com/user/bjossymandias"><img src="https://spotify-now-playing-bjornelvar.vercel.app/api/spotify" alt="Spotify" /></a></p>
+<h3 id="some-stats">Some stats:</h3>
+<p><a href="https://github.com/bjornelvar"><img src="https://github-readme-stats-bjornelvar.vercel.app/api?username=bjornelvar&amp;card_width=500&amp;include_all_commits=true&amp;count_private=true&amp;show_icons=true&amp;line_height=20&amp;theme=moltack" alt="Stat" /></a></p>
+<p><a href="https://github.com/bjornelvar"><img src="https://github-readme-stats-bjornelvar.vercel.app/api/top-langs/?username=bjornelvar&amp;card_width=450&amp;layout=compact&amp;hide=HTML,PostScript&amp;theme=moltack" alt="Top-Langs" /></a></p>
+
+    </div>
+    <div class="is-hidden-touch">
+      <!-- <h3>Certifications</h3>
+      
+      
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;AlongWY" data-toggle="tooltip" title="Arctic Code Vault Contributor" data-offset="0,10" rel="me">
+        <figure class="image is-64x64">
+          
+          <img src="https:&#x2F;&#x2F;github.githubassets.com&#x2F;images&#x2F;modules&#x2F;profile&#x2F;badge--acv-64.png">
+          
+        </figure>
+      </a>
+       -->
+      <h3>Socials</h3>
+      
+      
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;bjornelvar" style="font-size: 1.75rem;" data-toggle="tooltip" title="GitHub"
+        data-offset="0,10" rel="me">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        
+      <a href="https:&#x2F;&#x2F;gitlab.com&#x2F;bjornelvar" style="font-size: 1.75rem;" data-toggle="tooltip" title="Gitlab"
+        data-offset="0,10" rel="me">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        
+      <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;bjornelvar&#x2F;" style="font-size: 1.75rem;" data-toggle="tooltip" title="LinkedIn"
+        data-offset="0,10" rel="me">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+
+  
+  <div class="section hero is-fullheight page" id="skills">
+    
+
+<div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
+  <h2>skills</h2>
+  <div style="overflow: auto;">
+    
+    <div style="padding-bottom: 1rem;">
+      <h3 style="color: #868e96;">Languages</h3>
+      <div>
+        
+        
+        <span class="icon"><i class="devicon-python-plain"></i></span>Python
+        
+        
+        
+        <span class="icon"><i class="devicon-java-plain"></i></span>Java
+        
+        
+        
+        <span class="icon"><i class="devicon-javascript-plain"></i></span>JavaScript
+        
+        
+        
+        
+        <!-- https://devicon.dev/ -->
+        <span class="icon"><i class="devicon-html5-plain"></i></span>HTML
+        
+        
+        
+        
+        
+        <!-- https://devicon.dev/ -->
+        <span class="icon"><i class="devicon-css3-plain"></i></span>CSS
+        
+        
+        
+        
+        
+        <!-- https://devicon.dev/ -->
+        <span class="icon"><i class="devicon-csharp-plain"></i></span>C#
+        
+        
+        
+        
+        <span class="icon"><i class="devicon-latex-plain"></i></span>Latex
+        
+        
+        
+        <span class="icon"><i class="devicon-markdown-plain"></i></span>Markdown
+        
+        
+      </div>
+    </div>
+    
+    <div style="padding-bottom: 1rem;">
+      <h3 style="color: #868e96;">Operating Systems &amp; Tools</h3>
+      <div>
+        
+        
+        <span class="icon"><i class="devicon-apple-plain"></i></span>Apple
+        
+        
+        
+        <span class="icon"><i class="devicon-figma-plain"></i></span>Figma
+        
+        
+        
+        <span class="icon"><i class="devicon-bash-plain"></i></span>bash
+        
+        
+        
+        <span class="icon"><i class="devicon-git-plain"></i></span>git
+        
+        
+      </div>
+    </div>
+    
+    <div style="padding-bottom: 1rem;">
+      <h3 style="color: #868e96;">Libraries &amp; Frameworks</h3>
+      <div>
+        
+        
+        <span class="icon"><i class="devicon-pandas-plain"></i></span>Pandas
+        
+        
+        
+        <span class="icon"><i class="devicon-numpy-plain"></i></span>Numpy
+        
+        
+        
+        <span class="icon"><i class="devicon-jupyter-plain"></i></span>Jupyter
+        
+        
+        
+        <span class="icon"><i class="devicon-django-plain"></i></span>Django
+        
+        
+        
+        <span class="icon"><i class="devicon-react-plain"></i></span>React
+        
+        
+        
+        <span class="icon"><i class="devicon-jquery-plain"></i></span>jQuery
+        
+        
+      </div>
+    </div>
+    
+    <div style="padding-bottom: 1rem;">
+      <h3 style="color: #868e96;">Data Management</h3>
+      <div>
+        
+        
+        <span class="icon"><i class="devicon-postgresql-plain"></i></span>PostgreSQL
+        
+        
+        
+        <span class="icon"><i class="devicon-mysql-plain"></i></span>MySQL
+        
+        
+        
+        <span class="icon"><i class="devicon-mongodb-plain"></i></span>MongoDB
+        
+        
+        
+        <span class="icon"><i class="devicon-sqlite-plain"></i></span>SQLite
+        
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+  
+
+  
+  <div class="section hero is-fullheight page" id="projects">
+    
+
+<div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
+  <h2><a href=".xyz&#x2F;projects&#x2F;">projects</a></h2>
+  <div class="is-hidden-touch">
+    <p>My favorite projects I have either created or contributed to.</p>
+
+  </div>
+  
+  <div class="pb-6 pt-2" style="overflow: auto;">
+    
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3 class="post-title"><a href=".xyz&#x2F;projects&#x2F;nba-scores-alfred&#x2F;">NBA Scores: An Alfred Workflow</a></h3>
+          </div>
+          
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            <span class="post-date">2022-10-24</span>
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-row">
+        
+        <div class="content" style="width: 100%;">
+          
+          <figure class="image is-128x128" style="float:left;">
+            
+            <img src=".xyz/media/alfred_nba_scores.png">
+            
+          </figure>
+          
+          <p><em>Featured on Alfred Gallery!</em> <ul> <li>Shows you today's games.</li> <li>Games in progress will take you to the box score section.</li> <li>Games that have finished will take you to the summary section.</li> <li>Also lists the stat leaders for all teams.</li> </ul></p>
+
+          <a href=".xyz&#x2F;projects&#x2F;nba-scores-alfred&#x2F;">Read More</a>
+        </div>
+        
+      </div>
+      
+      <div class="tags">
+        
+        <span class="tag"><a href="/tags/python">Python</a></span>
+        
+        <span class="tag"><a href="/tags/api">API</a></span>
+        
+        <span class="tag"><a href="/tags/alfred">Alfred</a></span>
+        
+        <span class="tag"><a href="/tags/workflow">Workflow</a></span>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3 class="post-title"><a href=".xyz&#x2F;projects&#x2F;canvas-crisis&#x2F;">Canvas Crisis</a></h3>
+          </div>
+          
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            <span class="post-date">2022-12-14</span>
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-row">
+        
+        <div class="content" style="width: 100%;">
+          
+          <figure class="image is-128x128" style="float:left;">
+            
+            <img src=".xyz/media/canvascrisis.gif">
+            
+          </figure>
+          
+          <p><em>As seen at UT Messan!</em> <ul> <li>2D game created in Unity.</li> <li>Basically a Mario and Portal hybrid.</li> <li>I think you should play it.</li> <li>Created in 2 weeks!</li> </ul></p>
+
+          <a href=".xyz&#x2F;projects&#x2F;canvas-crisis&#x2F;">Read More</a>
+        </div>
+        
+      </div>
+      
+      <div class="tags">
+        
+        <span class="tag"><a href="/tags/unity">Unity</a></span>
+        
+        <span class="tag"><a href="/tags/c#">C#</a></span>
+        
+        <span class="tag"><a href="/tags/game">Game</a></span>
+        
+        <span class="tag"><a href="/tags/2d">2D</a></span>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  <h3><a href=".xyz&#x2F;projects&#x2F;">Other projects here!</a></h3>
+  
+</div>
+
+  </div>
+  
+
+  
+
+  
+
+  
+  <div class="section hero is-fullheight page" id="experience">
+    
+
+<div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
+  <h2>experience</h2>
+  <div style="overflow: auto;">
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3>Audio Engineer</h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            May 2022 - 
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle"><a href="https://www.storytel.com/is/is/">Storytel</a></h2>
+        <div>
+          Recording, editing and mixing audiobooks.
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3>Project Manager and Sound Technician</h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            February 2019 - September 2021
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle"><a href="https://www.hljomaholl.is/">Hljómahöll</a></h2>
+        <div>
+          Coordinating live events, live audio mixing and content creation for the Icelandic Museum of Rock 'n' Roll.
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3>Support Worker and Custodian</h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            September 2016 - January 2018
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle"><a href="https://www.reykjanesbaer.is/is">Reykjanesbær</a></h2>
+        <div>
+          Supporting kids with special needs and general housekeeping.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+  </div>
+  
+
+  
+  <div class="section hero is-fullheight page" id="education">
+    
+
+<div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
+  <h2>education</h2>
+  <div  style="overflow: auto;">
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3><a href="https://ru.is">Reykjavik University</a></h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            2021 - 2024
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle">Computer Science</h2>
+        <div>
+          
+        </div>
+        <div>
+          Bachelor of Science
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3><a href="https://keilir.net/">Keilir</a></h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            2019 - 2021
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle">Háskólabrú</h2>
+        <div>
+          
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="mb-5">
+      <nav class="level mb-0">
+        <div class="level-left">
+          <div class="level-item">
+            <h3><a href="https://tskoli.is/">Tækniskólinn (Stúdíó Sýrland)</a></h3>
+          </div>
+        </div>
+        <div class="level-right is-hidden-touch">
+          <div class="level-item">
+            2018
+          </div>
+        </div>
+      </nav>
+      <div class="is-flex is-flex-direction-column is-align-items-start">
+        <h2 class="subtitle">Audio Engineering</h2>
+        <div>
+          
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+  
+<script>
+  function show_bib(bib_path) {
+    $.ajax({
+      url: bib_path,
+      success: function (data) {
+        $("#bibtex-content").text(data);
+        $("#copyTarget").addClass("is-active");
+      },
+    });
+  }
+
+  document
+    .getElementById("copyButton")
+    .addEventListener("click", function () {
+      var copyText = document.getElementById("bibtex-content");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      $("#copyTarget").removeClass("is-active");
+    });
+</script>
+
+  
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var fullpages = new fullpage('#fullpage', {
+        menu: '#menu',
+        setRecordHistory: false,
+        anchors: [
+             'anchor_about',         
+             'anchor_skills',        
+             'anchor_projects',      
+            
+            
+             'anchor_experience',    
+             'anchor_education',     
+            
+        ],
+        afterResize: function( width, height ){
+		    if (width < 936) {
+                fullpage_api.setAutoScrolling(false);
+            } else {
+                fullpage_api.setAutoScrolling(true);
+            }
+	    }
+    });
+    if (screen.width < 936){
+        fullpages.setAutoScrolling(false);
+    }
+
+</script>
+
+</body>
+
 </html>
