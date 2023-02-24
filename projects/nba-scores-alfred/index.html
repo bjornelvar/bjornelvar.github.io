@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <title>Bjössi</title>
+  
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="https://bjornelvar.dev/main.css">
+
+  
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+
+
+
+  
+  
+<!-- RSS -->
+
+<link rel="alternate" type="application/atom+xml" title="RSS" href="https://bjornelvar.dev/atom.xml">
+
+
+  
+
+  
+  
+</head>
+
+<body>
+  <aside id="sidebar" class="menu is-hidden-touch">
+    
+
+<div style="display:block;margin:auto auto 0;padding:.5rem">
+    <figure class="image">
+        <img id="avatar" class="is-rounded" src="https://bjornelvar.dev/media/mois.jpg">
+    </figure>
+</div>
+
+
+    
+<ul id="menu" class="menu-list">
+    
+
+<li data-menuanchor="about"><a href="https://bjornelvar.dev/#anchor_about">ABOUT</a></li>   
+
+ 
+<li data-menuanchor="skills"><a href="https://bjornelvar.dev/#anchor_skills">SKILLS</a></li>
+
+
+<li data-menuanchor="projects"><a href="https://bjornelvar.dev/#anchor_projects">PROJECTS</a></li>
+
+
+
+ 
+<li data-menuanchor="experience"><a href="https://bjornelvar.dev/#anchor_experience">EXPERIENCE</a></li>
+
+ 
+<li data-menuanchor="education"><a href="https://bjornelvar.dev/#anchor_education">EDUCATION</a></li>
+
+
+</ul>
+
+  </aside>
+  
+<div class="modal" id="copyTarget">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <section class="modal-card-body">
+      <textarea class="textarea" id="bibtex-content" placeholder="e.g. Hello world"  readonly></textarea>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" id="copyButton">Copy to clipboard</button>
+    </footer>
+  </div>
+</div>
+
+  <div id="content">
+    <!-- Content -->
+    
+<div class="container is-fluid" style="min-height: 100vh;">
+  <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
+    <h2>NBA Scores: An Alfred Workflow
+		<!-- <a href="https:&#x2F;&#x2F;alfred.app&#x2F;workflows&#x2F;bjornelvar&#x2F;nba-scores&#x2F;" style="font-style: initial;" ><span class="tag is-warning">Link</span></a> -->
+	</h2>
+    
+    <div class="content pb-5">
+      <!-- ### [NBA Scores: An Alfred Workflow](https://alfred.app/workflows/bjornelvar/nba-scores/) -->
+<p><img src="/media/alfred_nba_scores_20221022.gif" alt="NBA Scores GIF" /></p>
+<h4 id="featured-on-alfred-gallery"><i>*Featured on Alfred Gallery!*</i></h4>
+<h3 id="description">Description</h3>
+<p>One evening, my partner asked me what games were on tonight and I instinctively went to type <code>nba</code> in Alfred. I of course didn't have any workflow for it, so I decided to build one myself. I used the <a href="https://pypi.org/project/nba-api/">NBA API</a> to get the data and then built a workflow around it using Python. And <em>a lot</em> of JSON parsing.</p>
+<p>If you're interested in that kind of stuff, you can check out my <a href="https://github.com/bjornelvar/alfred_nba_scores">Github repository</a>.</p>
+<h3 id="how-to-use-it">How to use it:</h3>
+<ul>
+<li>An Alfred Powerpack is required. (Sorry)</li>
+<li>Download the workflow from <a href="https://alfred.app/workflows/bjornelvar/nba-scores/">Alfred Gallery</a>.</li>
+<li>Double click it to install.</li>
+<li>Type <code>nba</code> in Alfred.</li>
+<li>Press enter or use the built-in hotkey on a game to see the box score or summary.</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p><img src="/media/alfred_nba_scores_pre.png" alt="NBA Scores Pre" />
+<img src="/media/alfred_nba_scores_small.png" alt="NBA Scores Small" /></p>
+<h3 id="credits">Credits</h3>
+<ul>
+<li><a href="https://pypi.org/project/nba-api/">NBA API</a></li>
+<li>Kristjana Ósk for asking me what games were on tonight.</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+<script>
+  function show_bib(bib_path) {
+    $.ajax({
+      url: bib_path,
+      success: function (data) {
+        $("#bibtex-content").text(data);
+        $("#copyTarget").addClass("is-active");
+      },
+    });
+  }
+
+  document
+    .getElementById("copyButton")
+    .addEventListener("click", function () {
+      var copyText = document.getElementById("bibtex-content");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      $("#copyTarget").removeClass("is-active");
+    });
+</script>
+
+  
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var fullpages = new fullpage('#fullpage', {
+        menu: '#menu',
+        setRecordHistory: false,
+        anchors: [
+             'anchor_about',         
+             'anchor_skills',        
+             'anchor_projects',      
+            
+            
+             'anchor_experience',    
+             'anchor_education',     
+            
+        ],
+        afterResize: function( width, height ){
+		    if (width < 936) {
+                fullpage_api.setAutoScrolling(false);
+            } else {
+                fullpage_api.setAutoScrolling(true);
+            }
+	    }
+    });
+    if (screen.width < 936){
+        fullpages.setAutoScrolling(false);
+    }
+
+</script>
+
+</body>
+
+</html>
