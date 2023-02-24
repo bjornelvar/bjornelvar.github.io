@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>Feng - Demo</title>
+    <title>Bjössi - Demo</title>
     <subtitle>A clean resume theme</subtitle>
-    <link href="https://resume.alongwy.top/tags/demo/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://resume.alongwy.top"/>
+    <link href="https://bjornelvar.xyz/tags/demo/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://bjornelvar.xyz"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2021-08-28T11:00:37.434+00:00</updated>
-    <id>https://resume.alongwy.top/tags/demo/atom.xml</id>
+    <id>https://bjornelvar.xyz/tags/demo/atom.xml</id>
     <entry xml:lang="en">
         <title>N-LTP: A Open-source Neural Chinese Language Technology Platform with Pretrained Models</title>
         <published>2021-08-28T11:00:37.434+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://resume.alongwy.top/publications/n-ltp-a-open-source-neural-chinese-language-technology-platform-with-pretrained-models/" type="text/html"/>
-        <id>https://resume.alongwy.top/publications/n-ltp-a-open-source-neural-chinese-language-technology-platform-with-pretrained-models/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/publications/n-ltp-a-open-source-neural-chinese-language-technology-platform-with-pretrained-models/" type="text/html"/>
+        <id>https://bjornelvar.xyz/publications/n-ltp-a-open-source-neural-chinese-language-technology-platform-with-pretrained-models/</id>
         <content type="html">&lt;p&gt;An open-source neural language technology platform supporting six fundamental Chinese NLP tasks: &lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;lexical analysis (Chinese word segmentation, part-of-speech tagging, and named entity recognition)&lt;&#x2F;li&gt;

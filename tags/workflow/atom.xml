@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Bjössi - Workflow</title>
+    <subtitle>A clean resume theme</subtitle>
+    <link href="https://bjornelvar.xyz/tags/workflow/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://bjornelvar.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-10-24T00:00:00+00:00</updated>
+    <id>https://bjornelvar.xyz/tags/workflow/atom.xml</id>
+    <entry xml:lang="en">
+        <title>NBA Scores: An Alfred Workflow</title>
+        <published>2022-10-24T00:00:00+00:00</published>
+        <updated>2022-10-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://bjornelvar.xyz/projects/nba-scores-alfred/" type="text/html"/>
+        <id>https://bjornelvar.xyz/projects/nba-scores-alfred/</id>
+        <content type="html">&lt;!-- ### [NBA Scores: An Alfred Workflow](https:&#x2F;&#x2F;alfred.app&#x2F;workflows&#x2F;bjornelvar&#x2F;nba-scores&#x2F;) --&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;alfred_nba_scores_20221022.gif&quot; alt=&quot;NBA Scores GIF&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;featured-on-alfred-gallery&quot;&gt;&lt;i&gt;*Featured on Alfred Gallery!*&lt;&#x2F;i&gt;&lt;&#x2F;h4&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;&#x2F;h3&gt;
+&lt;p&gt;One evening, my partner asked me what games were on tonight and I instinctively went to type &lt;code&gt;nba&lt;&#x2F;code&gt; in Alfred. I of course didn&#x27;t have any workflow for it, so I decided to build one myself. I used the &lt;a href=&quot;https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;nba-api&#x2F;&quot;&gt;NBA API&lt;&#x2F;a&gt; to get the data and then built a workflow around it using Python. And &lt;em&gt;a lot&lt;&#x2F;em&gt; of JSON parsing.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re interested in that kind of stuff, you can check out my &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bjornelvar&#x2F;alfred_nba_scores&quot;&gt;Github repository&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-use-it&quot;&gt;How to use it:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;An Alfred Powerpack is required. (Sorry)&lt;&#x2F;li&gt;
+&lt;li&gt;Download the workflow from &lt;a href=&quot;https:&#x2F;&#x2F;alfred.app&#x2F;workflows&#x2F;bjornelvar&#x2F;nba-scores&#x2F;&quot;&gt;Alfred Gallery&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Double click it to install.&lt;&#x2F;li&gt;
+&lt;li&gt;Type &lt;code&gt;nba&lt;&#x2F;code&gt; in Alfred.&lt;&#x2F;li&gt;
+&lt;li&gt;Press enter or use the built-in hotkey on a game to see the box score or summary.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;alfred_nba_scores_pre.png&quot; alt=&quot;NBA Scores Pre&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;media&#x2F;alfred_nba_scores_small.png&quot; alt=&quot;NBA Scores Small&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;credits&quot;&gt;Credits&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;nba-api&#x2F;&quot;&gt;NBA API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Kristjana Ósk for asking me what games were on tonight.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+    </entry>
+</feed>
