@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://bjornelvar.xyz/sitemap.xml
+Sitemap: https://resume.alongwy.top/sitemap.xml
