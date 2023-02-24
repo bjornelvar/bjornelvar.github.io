@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Bjössi - NLP</title>
     <subtitle>A clean resume theme</subtitle>
-    <link href=".xyz/tags/nlp/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href=".xyz"/>
+    <link href="https://bjornelvar.xyz/tags/nlp/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://bjornelvar.xyz"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2021-08-28T14:13:14.674+00:00</updated>
-    <id>.xyz/tags/nlp/atom.xml</id>
+    <id>https://bjornelvar.xyz/tags/nlp/atom.xml</id>
     <entry xml:lang="en">
         <title>Huggingface&#x2F;datasets</title>
         <published>2021-08-28T14:13:14.674+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href=".xyz/opensource/huggingface-datasets/" type="text/html"/>
-        <id>.xyz/opensource/huggingface-datasets/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/opensource/huggingface-datasets/" type="text/html"/>
+        <id>https://bjornelvar.xyz/opensource/huggingface-datasets/</id>
         <content type="html">&lt;p&gt;🤗 Datasets is a lightweight library providing two main features:&lt;&#x2F;p&gt;
 &lt;p&gt;one-line dataloaders for many public datasets: &lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -31,8 +31,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href=".xyz/publications/hit-scir-at-mrp-2020-transition-based-parser-and-iterative-inference-parser/" type="text/html"/>
-        <id>.xyz/publications/hit-scir-at-mrp-2020-transition-based-parser-and-iterative-inference-parser/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/publications/hit-scir-at-mrp-2020-transition-based-parser-and-iterative-inference-parser/" type="text/html"/>
+        <id>https://bjornelvar.xyz/publications/hit-scir-at-mrp-2020-transition-based-parser-and-iterative-inference-parser/</id>
         <content type="html">&lt;p&gt;This paper describes our submission system (HIT-SCIR) for the CoNLL 2020 shared task: Cross-Framework and Cross-Lingual Meaning Representation Parsing. &lt;&#x2F;p&gt;
 &lt;p&gt;The task includes five frameworks for graph-based meaning representations, i.e., UCCA, EDS, PTG, AMR, and DRG. &lt;&#x2F;p&gt;
 &lt;p&gt;Our solution consists of two sub-systems: &lt;&#x2F;p&gt;

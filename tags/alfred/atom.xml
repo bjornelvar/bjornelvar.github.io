@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Bjössi - Alfred</title>
     <subtitle>A clean resume theme</subtitle>
-    <link href=".xyz/tags/alfred/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href=".xyz"/>
+    <link href="https://bjornelvar.xyz/tags/alfred/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://bjornelvar.xyz"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-10-24T00:00:00+00:00</updated>
-    <id>.xyz/tags/alfred/atom.xml</id>
+    <id>https://bjornelvar.xyz/tags/alfred/atom.xml</id>
     <entry xml:lang="en">
         <title>NBA Scores: An Alfred Workflow</title>
         <published>2022-10-24T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href=".xyz/projects/nba-scores-alfred/" type="text/html"/>
-        <id>.xyz/projects/nba-scores-alfred/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/projects/nba-scores-alfred/" type="text/html"/>
+        <id>https://bjornelvar.xyz/projects/nba-scores-alfred/</id>
         <content type="html">&lt;!-- ### [NBA Scores: An Alfred Workflow](https:&#x2F;&#x2F;alfred.app&#x2F;workflows&#x2F;bjornelvar&#x2F;nba-scores&#x2F;) --&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;alfred_nba_scores_20221022.gif&quot; alt=&quot;NBA Scores GIF&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;featured-on-alfred-gallery&quot;&gt;&lt;i&gt;*Featured on Alfred Gallery!*&lt;&#x2F;i&gt;&lt;&#x2F;h4&gt;

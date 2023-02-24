@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Bjössi - Unity</title>
     <subtitle>A clean resume theme</subtitle>
-    <link href=".xyz/tags/unity/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href=".xyz"/>
+    <link href="https://bjornelvar.xyz/tags/unity/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://bjornelvar.xyz"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-12-14T00:00:00+00:00</updated>
-    <id>.xyz/tags/unity/atom.xml</id>
+    <id>https://bjornelvar.xyz/tags/unity/atom.xml</id>
     <entry xml:lang="en">
         <title>Canvas Crisis</title>
         <published>2022-12-14T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href=".xyz/projects/canvas-crisis/" type="text/html"/>
-        <id>.xyz/projects/canvas-crisis/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/projects/canvas-crisis/" type="text/html"/>
+        <id>https://bjornelvar.xyz/projects/canvas-crisis/</id>
         <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;blueredjump.gif&quot; alt=&quot;Blue Red Jump&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;play-here&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bjornelvar.itch.io&#x2F;canvas-crisis?secret=nalHXxorpAvtMxefb4dOVO4unG4&quot;&gt;PLAY HERE&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;&#x2F;h3&gt;
@@ -30,8 +30,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href=".xyz/projects/anti-clockwise-rocket-science/" type="text/html"/>
-        <id>.xyz/projects/anti-clockwise-rocket-science/</id>
+        <link rel="alternate" href="https://bjornelvar.xyz/projects/anti-clockwise-rocket-science/" type="text/html"/>
+        <id>https://bjornelvar.xyz/projects/anti-clockwise-rocket-science/</id>
         <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;rocketscience_desc.png&quot; alt=&quot;Rocket Science&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;play-here&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;bjornelvar.itch.io&#x2F;anti-clockwise-rocket-science-2?secret=1ncTbgCp2wtRKMwuPlaZhDNjb4&quot;&gt;PLAY HERE&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;&#x2F;h3&gt;
