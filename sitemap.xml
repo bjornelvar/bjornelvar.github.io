@@ -13,10 +13,6 @@
         <loc>https://bjornelvar.dev/opensource/</loc>
     </url>
     <url>
-        <loc>https://bjornelvar.dev/opensource/huggingface-datasets/</loc>
-        <lastmod>2021-08-28T14:13:14.674Z</lastmod>
-    </url>
-    <url>
         <loc>https://bjornelvar.dev/projects/</loc>
     </url>
     <url>
@@ -30,6 +26,10 @@
     <url>
         <loc>https://bjornelvar.dev/projects/nba-scores-alfred/</loc>
         <lastmod>2022-10-24</lastmod>
+    </url>
+    <url>
+        <loc>https://bjornelvar.dev/projects/scott-hanson-bot/</loc>
+        <lastmod>2022-09-12</lastmod>
     </url>
     <url>
         <loc>https://bjornelvar.dev/publications/</loc>
@@ -67,10 +67,10 @@
         <loc>https://bjornelvar.dev/tags/chinese/</loc>
     </url>
     <url>
-        <loc>https://bjornelvar.dev/tags/datasets/</loc>
+        <loc>https://bjornelvar.dev/tags/demo/</loc>
     </url>
     <url>
-        <loc>https://bjornelvar.dev/tags/demo/</loc>
+        <loc>https://bjornelvar.dev/tags/discord/</loc>
     </url>
     <url>
         <loc>https://bjornelvar.dev/tags/emnlp/</loc>
@@ -89,6 +89,9 @@
     </url>
     <url>
         <loc>https://bjornelvar.dev/tags/unity/</loc>
+    </url>
+    <url>
+        <loc>https://bjornelvar.dev/tags/web-scraping/</loc>
     </url>
     <url>
         <loc>https://bjornelvar.dev/tags/workflow/</loc>

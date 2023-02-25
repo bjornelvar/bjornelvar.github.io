@@ -73,20 +73,23 @@
 </content>
     </entry>
     <entry xml:lang="en">
-        <title>Huggingface&#x2F;datasets</title>
-        <published>2021-08-28T14:13:14.674+00:00</published>
-        <updated>2021-08-28T14:13:14.674+00:00</updated>
+        <title>Scott Hanson Bot</title>
+        <published>2022-09-12T00:00:00+00:00</published>
+        <updated>2022-09-12T00:00:00+00:00</updated>
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://bjornelvar.dev/opensource/huggingface-datasets/" type="text/html"/>
-        <id>https://bjornelvar.dev/opensource/huggingface-datasets/</id>
-        <content type="html">&lt;p&gt;🤗 Datasets is a lightweight library providing two main features:&lt;&#x2F;p&gt;
-&lt;p&gt;one-line dataloaders for many public datasets: &lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;one liners to download and pre-process any of the number of datasets major public datasets (in 467 languages and dialects!) provided on the HuggingFace Datasets Hub. With a simple command like &lt;code&gt;squad_dataset = load_dataset(&amp;quot;squad&amp;quot;)&lt;&#x2F;code&gt;, get any of these datasets ready to use in a dataloader for training&#x2F;evaluating a ML model (Numpy&#x2F;Pandas&#x2F;PyTorch&#x2F;TensorFlow&#x2F;JAX),&lt;&#x2F;li&gt;
-&lt;li&gt;efficient data pre-processing: simple, fast and reproducible data pre-processing for the above public datasets as well as your own local datasets in CSV&#x2F;JSON&#x2F;text. With simple commands like &lt;code&gt;tokenized_dataset = dataset.map(tokenize_example)&lt;&#x2F;code&gt;, efficiently prepare the dataset for inspection and ML model evaluation and training.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
+        <link rel="alternate" href="https://bjornelvar.dev/projects/scott-hanson-bot/" type="text/html"/>
+        <id>https://bjornelvar.dev/projects/scott-hanson-bot/</id>
+        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;scott_help.png&quot; alt=&quot;Scott Help&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;&#x2F;h3&gt;
+&lt;p&gt;I created this Discord bot for my Fantasy Football League. I wanted my Discord server to be more interactive and fun, as well as to archive some things, like what was the score in this particular matchup at this particular point in time. I also wanted to be able to see the current standings, current schedule and the top performers for every position and every week.&lt;&#x2F;p&gt;
+&lt;p&gt;I wrote the bot in Python and used the &lt;a href=&quot;https:&#x2F;&#x2F;discordpy.readthedocs.io&#x2F;en&#x2F;latest&#x2F;&quot;&gt;Discord.py&lt;&#x2F;a&gt; library. I also used &lt;a href=&quot;https:&#x2F;&#x2F;www.crummy.com&#x2F;software&#x2F;BeautifulSoup&#x2F;bs4&#x2F;doc&#x2F;&quot;&gt;Beautiful Soup&lt;&#x2F;a&gt; to scrape the data from the league&#x27;s website. I then used &lt;a href=&quot;https:&#x2F;&#x2F;pypi.org&#x2F;project&#x2F;table2ascii&#x2F;&quot;&gt;Table2Ascii&lt;&#x2F;a&gt; to output the data in a nice format for the Discord bot to send. The bot was hosted on my friends Raspberry Pi, to update the bot remotely I used a Discord command I wrote that runs a bash script on the Raspberry Pi.&lt;&#x2F;p&gt;
+&lt;p&gt;My future plans for next season is to refactor the code and make it more modular. Then I would like to use more of the &lt;a href=&quot;https:&#x2F;&#x2F;pandas.pydata.org&#x2F;&quot;&gt;Pandas library&lt;&#x2F;a&gt; to make the code more efficient and easier to read. After that, I would like to implement the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;uberfastman&#x2F;yfpy&quot;&gt;yfpy&lt;&#x2F;a&gt; to get historical data from our league.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;examples&quot;&gt;Examples&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;media&#x2F;scott_top_rb.png&quot; alt=&quot;Scott Top RB&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;media&#x2F;scott_standings.png&quot; alt=&quot;Scott Standings&quot; &#x2F;&gt;
+&lt;img src=&quot;&#x2F;media&#x2F;scott_scores.png&quot; alt=&quot;Scott Scores&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
     </entry>
     <entry xml:lang="en">

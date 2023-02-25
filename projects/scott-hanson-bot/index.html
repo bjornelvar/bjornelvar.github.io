@@ -24,10 +24,13 @@
 
 
   
+  
+<!-- RSS -->
 
-<link rel="alternate" type="application/rss+xml" title="RSS"
-  href="https://bjornelvar.dev/tags/Datasets/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="RSS" href="https://bjornelvar.dev/atom.xml">
 
+
+  
 
   
   
@@ -86,30 +89,24 @@
     
 <div class="container is-fluid" style="min-height: 100vh;">
   <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
-    <h1>Datasets</h1>
+    <h2>Scott Hanson Bot
+		<!-- <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=97h0Yo7qYYY" style="font-style: initial;" ><span class="tag is-warning">Link</span></a> -->
+	</h2>
     
-    
-    <div class="card mb-5">
-      <header class="card-header">
-        <p class="card-header-title">
-          <a href="https://bjornelvar.dev/opensource/huggingface-datasets/">Huggingface&#x2F;datasets</a>
-        </p>
-      </header>
-      
-      <div class="card-content">
-        <div class="content">
-          <p>🤗 The largest hub of ready-to-use datasets for ML models with fast, easy-to-use and efficient data manipulation tools</p>
+    <div class="content pb-5">
+      <p><img src="/media/scott_help.png" alt="Scott Help" /></p>
+<h3 id="description">Description</h3>
+<p>I created this Discord bot for my Fantasy Football League. I wanted my Discord server to be more interactive and fun, as well as to archive some things, like what was the score in this particular matchup at this particular point in time. I also wanted to be able to see the current standings, current schedule and the top performers for every position and every week.</p>
+<p>I wrote the bot in Python and used the <a href="https://discordpy.readthedocs.io/en/latest/">Discord.py</a> library. I also used <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> to scrape the data from the league's website. I then used <a href="https://pypi.org/project/table2ascii/">Table2Ascii</a> to output the data in a nice format for the Discord bot to send. The bot was hosted on my friends Raspberry Pi, to update the bot remotely I used a Discord command I wrote that runs a bash script on the Raspberry Pi.</p>
+<p>My future plans for next season is to refactor the code and make it more modular. Then I would like to use more of the <a href="https://pandas.pydata.org/">Pandas library</a> to make the code more efficient and easier to read. After that, I would like to implement the <a href="https://github.com/uberfastman/yfpy">yfpy</a> to get historical data from our league.</p>
+<h3 id="examples">Examples</h3>
+<p><img src="/media/scott_top_rb.png" alt="Scott Top RB" />
+<img src="/media/scott_standings.png" alt="Scott Standings" />
+<img src="/media/scott_scores.png" alt="Scott Scores" /></p>
 
-          <a href="https:&#x2F;&#x2F;bjornelvar.dev&#x2F;opensource&#x2F;huggingface-datasets&#x2F;">Read More</a>
-        </div>
-      </div>
-      
     </div>
-    
-    
   </div>
 </div>
-
 
   </div>
   
