@@ -24,6 +24,10 @@
         <lastmod>2022-12-14</lastmod>
     </url>
     <url>
+        <loc>https://bjornelvar.dev/projects/chicago-data-analysis/</loc>
+        <lastmod>2023-03-23</lastmod>
+    </url>
+    <url>
         <loc>https://bjornelvar.dev/projects/nba-scores-alfred/</loc>
         <lastmod>2022-10-24</lastmod>
     </url>
@@ -67,6 +71,9 @@
         <loc>https://bjornelvar.dev/tags/chinese/</loc>
     </url>
     <url>
+        <loc>https://bjornelvar.dev/tags/data-analysis/</loc>
+    </url>
+    <url>
         <loc>https://bjornelvar.dev/tags/demo/</loc>
     </url>
     <url>
@@ -79,7 +86,13 @@
         <loc>https://bjornelvar.dev/tags/game/</loc>
     </url>
     <url>
+        <loc>https://bjornelvar.dev/tags/machine-learning/</loc>
+    </url>
+    <url>
         <loc>https://bjornelvar.dev/tags/nlp/</loc>
+    </url>
+    <url>
+        <loc>https://bjornelvar.dev/tags/pandas/</loc>
     </url>
     <url>
         <loc>https://bjornelvar.dev/tags/python/</loc>
