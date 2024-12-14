@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A very simple, centered personal resume page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flw - bjössi</title>
     <style>
         body {
-            background-color: black; /* Default to dark mode */
-            color: white; /* Default to dark mode text color */
+            font-family: 'Courier New', monospace;
+				}
+        .embed-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 1280px;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
         }
-        
-        iframe {
-            display: block; /* Ensures proper margin handling */
-            width: 100%; /* Makes the iframe responsive */
-            height: 80vh; /* Makes the iframe responsive */
-            margin: auto; /* Centers the iframe horizontally */
+        .embed-container iframe {
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
-<body class="dark-mode"> <!-- Start in dark mode -->
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <p>I will do something cool here sometime later</p>
-    <p>Meanwhile, here is a map of all Frank Lloyd Wright buildings. Hallo</p>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1TM8DqHMPpw5YdBX7tyfIc2Ap-BE&hl=en_US&ehbc=2E312F" width="1280" height="960"></iframe>
+
+<body>
+	<Center>
+
+		<a href="index.html" style="color:blue">home</a>
+		<a href="projects.html" style="color:blue">projects</a>
+		<a href="https://www.linkedin.com/in/bjornelvar/" style="color:blue">linkedin</a>
+		<a href="flw.html" style="color:blue">flw</a>
+		
+		<br><br>
+		
+		<div class="embed-container">
+			<iframe src="https://www.google.com/maps/d/embed?mid=1TM8DqHMPpw5YdBX7tyfIc2Ap-BE&hl=en_US&ehbc=2E312F"></iframe>
+		</div>
+</Center>
 </body>
 </html>
