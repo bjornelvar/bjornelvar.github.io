@@ -6,16 +6,16 @@
 	<meta name="description" content="A very simple, centered personal resume page">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bjössi</title>
-	<!-- Google Analytics -->
-	
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-71CXW2E31J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-71CXW2E31J');
+	<script>
+		window.onload = function() {
+				fetch('https://page-counter-axum.fly.dev/api/counter', {
+				// fetch('http://localhost:8080/api/counter', {
+						method: 'POST'
+				})
+				.then(response => response.text())
+				.then(data => console.log('Counter updated:', data))
+				.catch(error => console.error('Error updating counter:', error));
+		}
 </script>
 
 </head>
@@ -42,6 +42,10 @@
 		Software Developer
 		<br><br>
 		<a href="bjorn_thorleifsson_cv_2024.pdf" style="color:blue">resume</a>
+		<footer>
+			Last Updated: December 14, 2024 23:45 UTC-06:00
+		</footer>
+
 	</center>
 </body>
 
