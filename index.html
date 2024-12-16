@@ -7,46 +7,53 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bjössi</title>
 	<script>
+		// I wanted to know how many page views I get. No information is stored about you.
 		window.onload = function() {
 				fetch('https://page-counter-axum.fly.dev/api/counter', {
-				// fetch('http://localhost:8080/api/counter', {
 						method: 'POST'
 				})
 				.then(response => response.text())
 				.then(data => console.log('Counter updated:', data))
 				.catch(error => console.error('Error updating counter:', error));
 		}
-</script>
-
+	</script>
+	<style>
+		body {
+			font-family: 'Courier New', monospace;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+			margin: 0;
+		}
+		main {
+			flex: 1;
+		}
+		footer {
+			text-align: center;
+		}
+	</style>
 </head>
 
-
-<style>
-	body {
-		font-family: 'Courier New', monospace;
-	}
-</style>
-
-
 <body>
-	<center>
-		<a href="index.html" style="color:blue">home</a>
-		<a href="projects.html" style="color:blue">projects</a>
-		<a href="https://github.com/bjornelvar" style="color:blue" target="_blank">github</a>
-		<a href="https://www.linkedin.com/in/bjornelvar/" style="color:blue" target="_blank">linkedin</a>
-		<a href="flw.html" style="color:blue">flw</a>
+	<main>
+		<center>
+			<a href="index.html" style="color:blue">home</a>
+			<a href="projects.html" style="color:blue">projects</a>
+			<a href="https://github.com/bjornelvar" style="color:blue" target="_blank">github</a>
+			<a href="https://www.linkedin.com/in/bjornelvar/" style="color:blue" target="_blank">linkedin</a>
+			<a href="flw.html" style="color:blue">flw</a>
 
-		<br><br>
-		<b><big><big><big>Bjorn Elvar Thorleifsson</big></big></big></b>
-		<br><br>
-		Software Developer
-		<br><br>
-		<a href="bjorn_thorleifsson_cv_2024.pdf" style="color:blue">resume</a>
-		<footer>
-			Last Updated: December 14, 2024 23:45 UTC-06:00
-		</footer>
-
-	</center>
+			<br><br>
+			<b><big><big><big>Bjorn Elvar Thorleifsson</big></big></big></b>
+			<br><br>
+			Software Developer
+			<br><br>
+			<a href="bjorn_thorleifsson_cv_2024.pdf" style="color:blue">resume</a>
+		</center>
+	</main>
+	<footer>
+		Last Updated: December 14, 2024 23:45 UTC-06:00
+	</footer>
 </body>
 
 </html>
