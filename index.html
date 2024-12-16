@@ -8,31 +8,35 @@
 	<title>Bjössi</title>
 	<script>
 		// I wanted to know how many page views I get. No information is stored about you.
-		window.onload = function() {
-				fetch('https://page-counter-axum.fly.dev/api/counter', {
-						method: 'POST'
-				})
+		window.onload = function () {
+			fetch('https://page-counter-axum.fly.dev/api/counter', {
+				method: 'POST'
+			})
 				.then(response => response.text())
 				.then(data => console.log('Counter updated:', data))
 				.catch(error => console.error('Error updating counter:', error));
 		}
 	</script>
-	<style>
-		body {
-			font-family: 'Courier New', monospace;
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
-			margin: 0;
-		}
-		main {
-			flex: 1;
-		}
-		footer {
-			text-align: center;
-		}
-	</style>
+
 </head>
+
+
+<style>
+	body {
+		font-family: 'Courier New', monospace;
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		margin: 0;
+	}
+	main {
+		flex:1;
+	}
+	footer {
+		text-align: center;
+	}
+</style>
+
 
 <body>
 	<main>
@@ -49,11 +53,12 @@
 			Software Developer
 			<br><br>
 			<a href="bjorn_thorleifsson_cv_2024.pdf" style="color:blue">resume</a>
-		</center>
 	</main>
+
 	<footer>
 		Last Updated: December 14, 2024 23:45 UTC-06:00
 	</footer>
+	</center>
 </body>
 
 </html>
