@@ -1,6 +1,6 @@
 body {
     /* cursor: url('cursors/90s.cur'), auto; */
-    cursor: url('cursors/soypoint.cur'), auto; /* Funny */
+    cursor: url('cursors/xmastree.cur'), auto; /* Funny */
     font-family: 'Courier New', monospace;
     display: flex;
     flex-direction: column;
@@ -16,15 +16,15 @@ a {
 a:hover {
     color: #0783d6;
     text-decoration: underline;
-    cursor: url('cursors/90s.cur'), auto;
+    /* cursor: url('cursors/90s.cur'), auto; */
+    cursor: url('cursors/xmastree.cur'), auto; /* Funny */
     /* cursor: url('cursors/soypoint.cur'), auto; */ /* Funny */
-    cursor: url('cursors/glock.cur'), auto; /* Funny */
 }
 
 a:active {
     color: white;
     /* cursor: url('cursors/hourglass90s.cur'), auto; */
-    cursor: url('cursors/hitmarker.cur'), auto;
+    /* cursor: url('cursors/hitmarker.cur'), auto; */
 }
 
 div {
