@@ -1,5 +1,6 @@
 body {
-    cursor: url('cursors/soypoint.cur'), auto;
+    /* cursor: url('cursors/90s.cur'), auto; */
+    cursor: url('cursors/soypoint.cur'), auto; /* Funny */
     font-family: 'Courier New', monospace;
     display: flex;
     flex-direction: column;
@@ -8,22 +9,28 @@ body {
 }
 
 a {
-    color: blue;
+    color: rgb(34, 34, 180);
     text-decoration: none;
 }
 
 a:hover {
     color: #0783d6;
     text-decoration: underline;
-    cursor: url('cursors/soypoint.cur'), auto;
-    /* cursor: url('cursors/glock.cur'), auto; */
+    cursor: url('cursors/90s.cur'), auto;
+    /* cursor: url('cursors/soypoint.cur'), auto; */ /* Funny */
+    cursor: url('cursors/glock.cur'), auto; /* Funny */
 }
 
 a:active {
     color: white;
+    /* cursor: url('cursors/hourglass90s.cur'), auto; */
     cursor: url('cursors/hitmarker.cur'), auto;
 }
 
 div {
     max-width: 50%;
+}
+
+p {
+    cursor: url('cursors/cubs.cur'), auto;
 }
