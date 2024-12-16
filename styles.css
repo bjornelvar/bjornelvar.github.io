@@ -28,7 +28,10 @@ a:active {
 }
 
 div {
-    max-width: 50%;
+    max-width: 70%;
+}
+div#resume {
+    max-width: 80%;
 }
 
 p {
