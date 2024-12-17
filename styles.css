@@ -34,6 +34,18 @@ div#resume {
     max-width: 80%;
 }
 
-p {
+span#cubs {
     cursor: url('cursors/cubs.cur'), auto;
+}
+
+span#lynch {
+    cursor: url('cursors/davidlynch.cur'), auto;
+}
+
+span#baseball {
+    cursor: url('cursors/baseballglasses.cur'), auto;
+}
+
+span#soccer {
+    cursor: url('cursors/soccer.cur'), auto;
 }
