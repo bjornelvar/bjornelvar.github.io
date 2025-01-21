@@ -1,6 +1,6 @@
 body {
-    /* cursor: url('cursors/90s.cur'), auto; */
-    cursor: url('cursors/xmastree.cur'), auto; /* Funny */
+    cursor: url('cursors/90s.cur'), auto;
+    /* cursor: url('cursors/xmastree.cur'), auto; Funny */
     font-family: 'Courier New', monospace;
     display: flex;
     flex-direction: column;
