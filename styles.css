@@ -17,14 +17,13 @@ a:hover {
     color: #0783d6;
     text-decoration: underline;
     /* cursor: url('cursors/90s.cur'), auto; */
-    cursor: url('cursors/xmastree.cur'), auto; /* Funny */
-    /* cursor: url('cursors/soypoint.cur'), auto; */ /* Funny */
+    cursor: url('cursors/soypoint.cur'), auto; /* Funny */
 }
 
 a:active {
     color: white;
     /* cursor: url('cursors/hourglass90s.cur'), auto; */
-    /* cursor: url('cursors/hitmarker.cur'), auto; */
+    cursor: url('cursors/hitmarker.cur'), auto;
 }
 
 div {
