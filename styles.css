@@ -48,3 +48,11 @@ span#baseball {
 span#soccer {
     cursor: url('cursors/soccer.cur'), auto;
 }
+
+#dark-mode-toggle:hover {
+    cursor: url('cursors/soypoint.cur'), auto !important;
+}
+
+#dark-mode-toggle:active {
+    cursor: url('cursors/hitmarker.cur'), auto !important;
+}
