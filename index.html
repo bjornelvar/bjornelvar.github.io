@@ -20,6 +20,13 @@
 	</script>
 	<link rel="stylesheet" href="darkmode.css" />
 	<script src="../darkmode.js"></script>
+	<script>
+		fetch('header.html')
+			.then(response => response.text())
+			.then(html => {
+				document.getElementById('header-placeholder').innerHTML = html;
+			});
+	</script>
 </head>
 
 
@@ -39,13 +46,9 @@
 		style="position: fixed; top: 10px; right: 10px; background: none; border: none; font-size: 24px; z-index: 1000;">🌙</button>
 	<main>
 		<center>
-			<a href="index.html">home</a>
-			<a href="projects.html">projects</a>
-			<a href="https://github.com/bjornelvar" target="_blank">github</a>
-			<a href="https://www.linkedin.com/in/bjornelvar/" target="_blank">linkedin</a>
-			<a href="flw.html">flw</a>
-			<a href="https://bjossi.dev/pics" target="_blank">pics</a>
-
+			<div id="header-container" style="position: relative;">
+				<div id="header-placeholder"></div>
+			</div>
 			<br><br>
 			<b><big><big><big>Bjorn Elvar Thorleifsson</big></big></big></b>
 			<br><br>
