@@ -7,26 +7,10 @@
 	<meta name="description" content="A very simple, centered personal resume page">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bjössi</title>
-	<script>
-		// I wanted to know how many page views I get. No information is stored about you.
-		window.onload = function () {
-			fetch('https://page-counter-axum.fly.dev/api/counter', {
-				method: 'POST'
-			})
-				.then(response => response.text())
-				.then(data => console.log('Counter updated:', data))
-				.catch(error => console.error('Error updating counter:', error));
-		}
-	</script>
+	<script src="scripts/page-counter.js"></script>
+	<script src="scripts/fetch-header.js"></script>
+	<script src="scripts/darkmode.js"></script>
 	<link rel="stylesheet" href="darkmode.css" />
-	<script src="../darkmode.js"></script>
-	<script>
-		fetch('header.html')
-			.then(response => response.text())
-			.then(html => {
-				document.getElementById('header-placeholder').innerHTML = html;
-			});
-	</script>
 </head>
 
 
