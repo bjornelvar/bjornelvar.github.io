@@ -7,8 +7,9 @@
 	<meta name="description" content="Projects Page">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projects - Bjössi</title>
+	<script src="scripts/fetch-header.js"></script>
+	<script src="scripts/darkmode.js"></script>
 	<link rel="stylesheet" href="darkmode.css" />
-	<script src="../darkmode.js"></script>
 </head>
 
 <style>
@@ -22,13 +23,9 @@
 	<button id="dark-mode-toggle"
 		style="position: fixed; top: 10px; right: 10px; background: none; border: none; font-size: 24px; z-index: 1000;">🌙</button>
 	<center>
-		<a href="index.html">home</a>
-		<a href="projects.html">projects</a>
-		<a href="https://github.com/bjornelvar" target="_blank">github</a>
-		<a href="https://www.linkedin.com/in/bjornelvar/" target="_blank">linkedin</a>
-		<a href="flw.html">flw</a>
-		<a href="https://bjossi.dev/pics" target="_blank">pics</a>
-
+		<div id="header-container" style="position: relative; max-width: 100%;">
+			<div id="header-placeholder"></div>
+		</div>
 		<br><br>
 		<b>
 			<big>
@@ -70,8 +67,7 @@
 				</big>
 			</b>
 			<br><br>
-			<a href="https://github.com/bjornelvar/alfred_nba_scores" target="_blank"
-				rel="noopener noreferrer">github</a>
+			<a href="https://github.com/bjornelvar/alfred_nba_scores" target="_blank" rel="noopener noreferrer">github</a>
 			<br><br>
 			One evening, my girlfriend asked me what games were on tonight and I instinctively went to type nba in
 			Alfred. I
@@ -92,8 +88,7 @@
 				</big>
 			</b>
 			<br><br>
-			<a href="https://sleeper-live-league-table.vercel.app/" target="_blank"
-				rel="noopener noreferrer">website</a>
+			<a href="https://sleeper-live-league-table.vercel.app/" target="_blank" rel="noopener noreferrer">website</a>
 			<br><br>
 			A live league table for your Sleeper Fantasy Football league using the Sleeper API. I built this because I
 			wanted to know if I was in the playoffs or not, I did not make the playoffs.
