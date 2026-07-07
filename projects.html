@@ -1,136 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Projects Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Bjössi</title>
+    <script src="scripts/fetch-header.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <link rel="stylesheet" href="darkmode.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<meta charset="UTF-8">
-	<meta name="description" content="Projects Page">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Projects - Bjössi</title>
-	<script src="scripts/fetch-header.js"></script>
-	<script src="scripts/darkmode.js"></script>
-	<link rel="stylesheet" href="darkmode.css" />
-</head>
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+    }
+  </style>
 
-<style>
-	body {
-		font-family: 'Courier New', monospace;
-	}
-</style>
+  <body>
+    <button
+      id="dark-mode-toggle"
+      style="
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        z-index: 1000;
+      "
+    >
+      🌙
+    </button>
+    <center>
+      <div id="header-container" style="position: relative; max-width: 100%">
+        <div id="header-placeholder"></div>
+      </div>
+      <br /><br />
+      <b>
+        <big>
+          <big>
+            <big> Projects </big>
+          </big>
+        </big>
+      </b>
+      <br /><br /><br />
 
+      <div>
+		<!-- Pico Lux Meter -->
+        <b>
+          <big> Pico Lux Meter </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://github.com/bjornelvar/pico-lux-meter"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        <br /><br />
+        Wanted to know which window in my apartment gets the most light so I built a lux meter using a Raspberry Pi Pico and a light sensor.
+		I just have it log the value to a binary file every 15 seconds to save on memory, then I just plug it in and run my python binary parser.
+        <br /><br /><br />
+        <!-- ============================== -->
+        <!-- ============================== -->
+        <!-- ============================== -->
 
-<body>
-	<button id="dark-mode-toggle"
-		style="position: fixed; top: 10px; right: 10px; background: none; border: none; font-size: 24px; z-index: 1000;">🌙</button>
-	<center>
-		<div id="header-container" style="position: relative; max-width: 100%;">
-			<div id="header-placeholder"></div>
-		</div>
-		<br><br>
-		<b>
-			<big>
-				<big>
-					<big>
-						Projects
-					</big>
-				</big>
-			</big>
-		</b>
-		<br><br><br>
+        <!-- Letterboxd Watchlist Picker -->
+        <b>
+          <big> Letterboxd Watchlist Picker </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://vps.bjossi.dev/letterboxd"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        <br /><br />
+        Tool built mainly for myself to solve the paradox of choice when I'm
+        trying to wittle down my watchlist. Usable by anybody though.
+        <br /><br /><br />
+        <!-- ============================== -->
+        <!-- ============================== -->
+        <!-- ============================== -->
 
+        <!-- Premier league -->
+        <b>
+          <big> Bjossi's Premier League Website </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://bjossi.dev/epl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        <br /><br />
+        Small website for myself so I can keep track of Liverpool in the title
+        race. Wanted some additional statistics that I couldn't find on just one
+        website.
+        <br />
+        There's also a history page on this site where you can query stuff
+        yourself. It is currently just set to show best perfoming teams in each
+        position in Premier League history.
+        <br /><br /><br />
+        <!-- ============================== -->
+        <!-- ============================== -->
+        <!-- ============================== -->
 
-		<div>
-			<!-- Letterboxd Watchlist Picker -->
-			<b>
-				<big>
-					Letterboxd Watchlist Picker
-				</big>
-			</b>
-			<br><br>
-			<a href="https://vps.bjossi.dev/letterboxd" target="_blank" rel="noopener noreferrer">website</a>
-			<br><br>
-			Tool built mainly for myself to solve the paradox of choice when I'm trying to wittle down my watchlist. Usable by anybody though.
-			<br><br><br>
-			<!-- ============================== -->
-			<!-- ============================== -->
-			<!-- ============================== -->
-			<!-- Premier league -->
-			<b>
-				<big>
-					Bjossi's Premier League Website
-				</big>
-			</b>
-			<br><br>
-			<a href="https://bjossi.dev/epl" target="_blank" rel="noopener noreferrer">website</a>
-			<br><br>
-			Small website for myself so I can keep track of Liverpool in the title race. Wanted some additional
-			statistics that I couldn't find on just one website.
-			<br>
-			There's also a history page on this site where you can query stuff yourself. It is currently just set to
-			show best perfoming teams in each position in Premier League history.
-			<br><br><br>
-			<!-- ============================== -->
-			<!-- ============================== -->
-			<!-- ============================== -->
+        <!-- ALFRED NBA SCORES -->
+        <b>
+          <big> Alfred NBA Scores </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://github.com/bjornelvar/alfred_nba_scores"
+          target="_blank"
+          rel="noopener noreferrer"
+          >github</a
+        >
+        <br /><br />
+        One evening, my girlfriend asked me what games were on tonight and I
+        instinctively went to type nba in Alfred. I of course didn't have any
+        workflow for it, so I decided to build one myself. I used the NBA API to
+        get the data and then built a workflow around it using Python. And a lot
+        of JSON parsing.
+        <br />
+        Got featured on the Alfred blog, it made me happy :)
+        <br /><br /><br />
+        <!-- ============================== -->
+        <!-- ============================== -->
+        <!-- ============================== -->
 
+        <!-- SLEEPER LIVE TABLE -->
+        <b>
+          <big> Sleeper Live Table </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://sleeper-live-league-table.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        <br /><br />
+        A live league table for your Sleeper Fantasy Football league using the
+        Sleeper API. I built this because I wanted to know if I was in the
+        playoffs or not, I did not make the playoffs.
 
-			<!-- ALFRED NBA SCORES -->
-			<b>
-				<big>
-					Alfred NBA Scores
-				</big>
-			</b>
-			<br><br>
-			<a href="https://github.com/bjornelvar/alfred_nba_scores" target="_blank" rel="noopener noreferrer">github</a>
-			<br><br>
-			One evening, my girlfriend asked me what games were on tonight and I instinctively went to type nba in
-			Alfred. I
-			of course didn't have any workflow for it, so I decided to build one myself. I used the NBA API to get the
-			data
-			and then built a workflow around it using Python. And a lot of JSON parsing.
-			<br>
-			Got featured on the Alfred blog, it made me happy :)
-			<br><br><br>
-			<!-- ============================== -->
-			<!-- ============================== -->
-			<!-- ============================== -->
+        <br /><br /><br />
+        <!-- ============================== -->
+        <!-- ============================== -->
+        <!-- ============================== -->
 
-			<!-- SLEEPER LIVE TABLE -->
-			<b>
-				<big>
-					Sleeper Live Table
-				</big>
-			</b>
-			<br><br>
-			<a href="https://sleeper-live-league-table.vercel.app/" target="_blank" rel="noopener noreferrer">website</a>
-			<br><br>
-			A live league table for your Sleeper Fantasy Football league using the Sleeper API. I built this because I
-			wanted to know if I was in the playoffs or not, I did not make the playoffs.
-
-			<br><br><br>
-			<!-- ============================== -->
-			<!-- ============================== -->
-			<!-- ============================== -->
-
-			<!-- NFL TIPPKEPPNIN -->
-			<b>
-				<big>
-					NFL Tippkeppnin
-				</big>
-			</b>
-			<br><br>
-			<a href="https://www.tippkeppni.net/" target="_blank" rel="noopener noreferrer">website</a>
-			<br><br>
-			A Pick 'Em style game for the NFL season. Users pick the winners of each game. The app is built with .NET
-			and Next.js. Frontend is hosted on Vercel, backend on fly.io. When Preseason power rankings have been
-			submitted, the user's picks are automatically generated for the entire season.
-
-
-
-
-
-		</div>
-	</center>
-</body>
-
+        <!-- NFL TIPPKEPPNIN -->
+        <b>
+          <big> NFL Tippkeppnin </big>
+        </b>
+        <br /><br />
+        <a
+          href="https://www.tippkeppni.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >website</a
+        >
+        <br /><br />
+        A Pick 'Em style game for the NFL season. Users pick the winners of each
+        game. The app is built with .NET and Next.js. Frontend is hosted on
+        Vercel, backend on fly.io. When Preseason power rankings have been
+        submitted, the user's picks are automatically generated for the entire
+        season.
+      </div>
+    </center>
+  </body>
 </html>
